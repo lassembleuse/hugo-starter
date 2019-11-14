@@ -4,3 +4,4 @@ title: Site de demonstration
 theme: bulma-theme
 DefaultContentLanguage: fr
 metaDataFormat: "yaml"
+enableRobotsTXT: true

@@ -6,6 +6,10 @@
   {{ with .Site.Data.global.seo_description }}  <meta name="description" content="{{ . }}">{{ end }}
   {{ with .Site.Data.global.seo_keywords }}  <meta name="keywords" content="{{ . }}">{{ end }}
   <link rel="shortcut icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png" />
+  <meta name="environment" value="{{ hugo.Environment }}">
+  {{ if not (eq hugo.Environment "production") }}
+  <meta name="robots" content="noindex,nofollow">
+  {{ end }}
 
   {{ if .Site.IsServer }}
     {{ $cssOpts := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
