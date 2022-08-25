@@ -32,3 +32,7 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 
 Tailwind :
 - https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter
+
+## Github actions
+
+See https://github.com/peaceiris/actions-gh-pages
